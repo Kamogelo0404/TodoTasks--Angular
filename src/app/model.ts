@@ -1,6 +1,7 @@
 // This is the model
 
 export class model {
+    [x: string]: any;
 
     user;
     items;
@@ -14,7 +15,7 @@ export class model {
              Hard coding the initial tasks in the model       
        */
         this.items = [{action: "Gym", done:false},
-                      {action:"Bath", done: false},
+                      {action:"Bath", done: true},
                       {action:"pray", done: false},
                       {action: "work", done: true}
             ]

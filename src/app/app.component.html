@@ -6,6 +6,11 @@
     
 </h3>
 
+<div class="my-1">
+    <input class="form-control" #todotext />
+    <button class="btn btn-primary mt-1" (click)= "addItem(todotext.value)">Add new Task</button>
+</div>
+
 <!--This is the table defition where the tasks and everything takes place-->
 <table>
     <!--This is the table header-->
@@ -36,12 +41,15 @@
              </td>
 
                <!--Fourth Column--> 
-            <td [ngSwitch]="item.done">
-                <span *ngSwitchCase="true">
-                    <i class="fa-solid fa-thumbs-up">
-                    </i>
+            <td [ngSwitch] = "item.done" class="faThumbsUp">
+                <span *ngSwitchCase = "true">
+                    <fa-icon [icon]="faThumbsUp"></fa-icon>
                 </span>
-                <span *ngSwitchDefault>No</span>
+                <span *ngSwitchDefault class="faThumbsDown">
+
+                    <fa-icon [icon]="faThumbsDown"></fa-icon>
+                    
+                </span>
             </td>
 
 
@@ -50,7 +58,6 @@
 
         
        </tbody>
-
 
 </table>
 <router-outlet></router-outlet>

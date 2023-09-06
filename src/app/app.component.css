@@ -17,3 +17,10 @@ th, td {
 
 tr:nth-child(even){background-color: #f3c68a;}
 
+.faThumbsDown{
+
+    color: red;
+}
+.faThumbsUp{
+    color: green;
+}
