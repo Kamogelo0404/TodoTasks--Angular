@@ -9,7 +9,7 @@ export class model {
 
     constructor(){
 
-       this.user = "Pheletso"; //This is the username displayed on the view 
+       this.user = "Kamogelo"; //This is the username displayed on the view 
         
        /*
              Hard coding the initial tasks in the model       
